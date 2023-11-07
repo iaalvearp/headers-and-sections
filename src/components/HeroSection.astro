@@ -1,0 +1,84 @@
+---
+import NavBar from "./NavBar.astro";
+
+---
+
+<section>
+  <NavBar></NavBar>
+  <div class="headerTexts">
+    <h1>NIVEK <strong>STUDIO</strong></h1>
+    <h2>Registra tu <strong>marca</strong> con nuestro equipo de profesionales y mantén seguro tu negocio.</h2>
+  </div>
+  <a class="heroLink" href="#">Conoce nuestos planes</a>
+  <video src="/hero-bg2.mp4" autoplay muted loop></video>
+  <span class="heroOverlay"></span>
+</section>
+
+  <style>
+    section{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 0;
+  overflow: hidden;
+}
+
+.headerTexts{
+  position: absolute;
+  top: 5rem;
+  text-align: center;
+  width: 80%;
+  padding: 1rem;
+  z-index: 2;
+}
+
+h1{
+  font-size: 3rem;
+  margin: 1rem 0;
+}
+
+h2{
+  font-weight: 400;
+}
+
+strong {
+  color: var(--secundary);
+}
+
+.heroLink{
+  position: absolute;
+  bottom: 5rem;
+  z-index: 2;
+  padding: 0.5rem 1rem;
+  background-color: var(--hover-gradient);
+  border-radius: 0.25rem;
+  backdrop-filter: blur(0.25rem);
+  transition: background-color, color;
+  transition-duration: 500ms;
+  border: 0.125rem solid var(--hover);
+}
+
+.heroLink:hover{
+  background-color: var(--primary);
+  color: var(--secundary);
+  border: 0.125rem solid var(--hover-gradient);
+}
+
+.heroOverlay{
+  background-color: var(--primary-gradient);
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
+
+video{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+  </style>

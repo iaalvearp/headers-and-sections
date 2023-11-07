@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CalculadoraArreglo1",
+      "request": "launch",
+      "mainClass": "pages.CalculadoraArreglo1",
+      "projectName": "headers_85aac03e"
+    },
+    {
+      "command": "./node_modules/.bin/astro dev",
+      "name": "Development server",
+      "request": "launch",
+      "type": "node-terminal"
+    }
+  ]
+}

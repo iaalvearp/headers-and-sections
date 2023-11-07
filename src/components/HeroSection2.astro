@@ -1,0 +1,78 @@
+---
+import NavBar2 from "./NavBar2.astro";
+
+---
+
+<header>
+    <div class="headerText">
+        <h1 class="heroTitle">
+            Nivek <strong class="heroAccent">Studio</strong>
+        </h1>
+        <p class="heroText">
+            Lorem ipsum dolor sit amet <strong class="heroAccent">marca</strong>  consectetur adipisicing elit. Sequi, id.
+        </p>
+        <div class="btnContainer">
+            <a class="heroBtn" href="#">Lorem ipsum</a>
+            <a class="heroBtnTwo" href="#">Lorem ipsum dolor</a>
+        </div>
+    </div>
+    <img class="heroPic" src="/hero2_trim.png" alt="">
+</header>
+
+<style>
+    header{
+        background-color: #333;
+        min-height: 100vh;
+        height: 100%;
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 1.25rem;
+    }
+    .heroPic {
+        min-width: 100%;
+        object-fit: cover;
+        max-height: 40rem;
+        min-height:16rem;
+        z-index: 0;
+    }
+    .headerText{
+        text-align: center;
+        font-size: 2rem;
+    }
+    .heroAccent{
+        color: var(--secundary);
+    }
+    .heroText{
+        font-size: 1.125rem;
+        padding: 1.25rem 0;
+    }
+    .btnContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .heroBtn{
+        padding: 0.5rem 1rem;
+        background-color: var(--secundary);
+        backdrop-filter: blur(0.25rem);
+        border-radius: 2rem;
+        border: 0.125rem solid var(--hover);
+        color: var(--primaryTwo);
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0.75rem 0;
+    }
+    .heroBtnTwo{
+        padding: 0.5rem 1rem;
+        background-color: var(--hover-gradient);
+        backdrop-filter: blur(0.25rem);
+        border-radius: 2rem;
+        border: 0.125rem solid var(--secundary);
+        color: var(--hover);
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 0.75rem 0;
+    }
+
+</style>
